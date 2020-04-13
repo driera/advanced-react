@@ -8,6 +8,7 @@ class Page extends React.Component {
       <div>
         <Meta />
         <Header />
+        {this.props.children}
       </div>
     );
   }
