@@ -3,6 +3,7 @@
       "plugin:react/recommended",
       "plugin:prettier/recommended"
   ],
+  "plugins": ["prettier"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
       "ecmaVersion": 2018,
@@ -17,6 +18,10 @@
       "react": {
           "version": "detect"
       }
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "arrow-parens": [2, "as-needed",{ "requireForBlockBody": false }]
   }
 }
 // {
